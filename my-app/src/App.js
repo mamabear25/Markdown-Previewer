@@ -29,6 +29,9 @@ export default class App extends React.Component {
                   Markdown Previewer
                 </div>
               </h1>
+              <div className="author">
+                <h5>Coded by <a class="anc" target="_blank" href="https://www.linkedin.com/in/silver-okonkwo-a08493175/">techMomma</a></h5>
+              </div>
             </div>
           </div>
 
@@ -37,7 +40,7 @@ export default class App extends React.Component {
               {" "}
               <div className="col header">
                 <h4>
-                  <div className="header">
+                  <div>
                     Editor
                   </div>
                 </h4>
@@ -57,7 +60,7 @@ export default class App extends React.Component {
             <div className="col-md-6">
               <div className="col header text-center">
                 <h4>
-                  <div className="header">
+                  <div>
                     Previewer
                   </div>
                 </h4>
@@ -78,35 +81,17 @@ const placeholder = `# Welcome to techMomma's Markdown Previewer!
 
 Heres some code, \`<div></div>\`, between 2 backticks.
 
-\`\`\`
-// this is multi-line code:
-
-function anotherExample(firstLine, lastLine) {
-  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
-    return multiLineCode;
-  }
-}
-\`\`\`
-
 You can also make text **bold**... whoa!
 Or _italic_.
 Or... wait for it... **_both!_**
 And feel free to go crazy ~~crossing stuff out~~.
 
-There's also [links](https://www.freecodecamp.org), and
-> Block Quotes!
-
-And if you want to get really crazy, even tables:
-
-Wild Header | Crazy Header | Another Header?
------------- | ------------- | -------------
-Your content can | be here, and it | can be here....
-And here. | Okay. | I think we get it.
+There's also [links](https://www.freecodecamp.org).
 
 - And of course there are lists.
   - Some are bulleted.
      - With different indentation levels.
-        - That look like this.
+        - That looks like this.
 
 
 1. And there are numbered lists too.
